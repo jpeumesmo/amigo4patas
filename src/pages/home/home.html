@@ -1,17 +1,26 @@
 <ion-header>
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <h3>Reportar Animal</h3>
+
+    <ion-item>
+      <ion-label>Tipo Animal</ion-label>
+      <ion-select [(ngModel)]="tipoAnimal">
+          <ion-option value="cachorro">Cachorro</ion-option>
+          <ion-option value="gato">Gato</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY, HH:mm" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+
+  <button ion-button secondary menuToggle>Reportar Animal</button>
 </ion-content>
