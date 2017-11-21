@@ -22,15 +22,15 @@ loadMap() {
   let mapOptions: GoogleMapOptions = {
     camera: {
       target: {
-        lat: 43.0741904,
-        lng: -89.3809802
+        lat: -21.1171519,
+        lng: -44.2473204
       },
-      zoom: 18,
+      zoom: 7,
       tilt: 30
     }
   };
 
-  this.map = this.googleMaps.create('map_canvas', mapOptions);
+  this.map = this.googleMaps.create('map', mapOptions);
 
   // Wait the MAP_READY before using any methods.
   this.map.one(GoogleMapsEvent.MAP_READY)
