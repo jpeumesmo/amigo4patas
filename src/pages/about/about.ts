@@ -25,11 +25,10 @@ loadMap() {
         lat: -21.1171519,
         lng: -44.2473204
       },
-      zoom: 7,
+      zoom: 14,
       tilt: 30
     }
   };
-
   this.map = this.googleMaps.create('map', mapOptions);
 
   // Wait the MAP_READY before using any methods.

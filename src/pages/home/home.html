@@ -3,12 +3,11 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Reportar Animal</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Reportar Animal</h3>
 
     <ion-item>
       <ion-label>Tipo Animal</ion-label>
@@ -23,8 +22,11 @@
     </ion-item>
     <ion-item>
       <ion-label>Endereço</ion-label>
+      <button clear item-right ion-button icon-only (click)='getUserPosition()'>
+        <ion-icon name="ios-locate"></ion-icon>
+      </button>
       <ion-input id="endereco" type="text"></ion-input>
     </ion-item>
 
-  <button ion-button secondary menuToggle>Reportar Animal</button>
+  <button ion-button secondary (click)='reportarAnimal()'>Reportar Animal</button>
 </ion-content>
