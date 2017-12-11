@@ -25,8 +25,9 @@
       <button clear item-right ion-button icon-only (click)='getUserPosition()'>
         <ion-icon name="ios-locate"></ion-icon>
       </button>
-      <ion-input id="endereco" type="text"></ion-input>
+      <ion-input id="endereco" type="text" [(ngModel)]="addr"></ion-input>
     </ion-item>
 
   <button ion-button block (click)='reportarAnimal()'>Reportar Animal</button>
 </ion-content>
+

@@ -43,3 +43,4 @@ import { Geolocation } from '@ionic-native/geolocation';
   ]
 })
 export class AppModule {}
+
