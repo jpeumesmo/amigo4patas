@@ -27,7 +27,12 @@
       </button>
       <ion-input id="endereco" type="text" [(ngModel)]="addr"></ion-input>
     </ion-item>
+    <ion-item>
+      <button clear ion-button icon only (click)="takePicture()">
+        <ion-icon md="md-camera" name="camera"></ion-icon>
+      </button>
+      <img [src]="base64Image" *ngIf="base64Image" />
+    </ion-item>
 
   <button ion-button block (click)='reportarAnimal()'>Reportar Animal</button>
 </ion-content>
-
