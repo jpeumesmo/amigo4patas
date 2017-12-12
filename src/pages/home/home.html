@@ -17,8 +17,8 @@
       </ion-select>
     </ion-item>
     <ion-item>
-      <ion-label>Date</ion-label>
-      <ion-datetime displayFormat="DD/MM/YYYY, HH:mm" [(ngModel)]="myDate"></ion-datetime>
+      <ion-label>Data</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="myDate"></ion-datetime>
     </ion-item>
     <ion-item>
       <ion-label>Endereço</ion-label>
@@ -28,9 +28,10 @@
       <ion-input id="endereco" type="text" [(ngModel)]="addr"></ion-input>
     </ion-item>
     <ion-item>
-      <button clear ion-button icon only (click)="takePicture()">
+      <button clear ion-button large icon only (click)="takePicture()">
         <ion-icon md="md-camera" name="camera"></ion-icon>
       </button>
+      <br>
       <img [src]="base64Image" *ngIf="base64Image" />
     </ion-item>
 
